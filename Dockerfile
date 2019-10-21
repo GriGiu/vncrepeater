@@ -10,7 +10,7 @@ RUN wget http://www.wisdomsoftware.gr/download/uvncrep017-ws.tar.gz
 RUN gunzip uvncrep017-ws.tar.gz
 RUN tar -xvf uvncrep017-ws.tar
 RUN cd uvncrep017-ws
-EXPOSE 5900, 5901
+EXPOSE 5900 5901
 RUN make && make install
 RUN useradd uvncrep
 RUN service uvncrepeater start
