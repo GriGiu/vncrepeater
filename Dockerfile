@@ -12,7 +12,8 @@ RUN wget http://www.wisdomsoftware.gr/download/uvncrep017-ws.tar.gz
 RUN tar -xzvf uvncrep017-ws.tar.gz
 RUN cd uvncrep017-ws
 
-RUN make && make install
+RUN make 
+RUN make install
 RUN useradd  -s /sbin/nologin uvncrep
 EXPOSE 5900 5901
 RUN service uvncrepeater start
