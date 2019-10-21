@@ -14,9 +14,9 @@ RUN pwd;ls -latr
 #RUN gunzip uvncrep017-ws.tar.gz
 RUN tar -xzvf uvncrep017-ws.tar.gz
 RUN pwd;ls -latr
-RUN cd /usr/local/src/uvncrep017-ws
+#RUN cd /usr/local/src/uvncrep017-ws
 RUN pwd;ls -latr
-
+WORKDIR /usr/local/src/uvncrep017-ws
 RUN make 
 RUN make install
 RUN useradd  -s /sbin/nologin uvncrep
