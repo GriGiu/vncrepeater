@@ -11,5 +11,5 @@ WORKDIR /usr/local/src/uvncrep017-ws
 RUN make 
 RUN make install
 RUN useradd  -s /sbin/nologin uvncrep
-EXPOSE 5900 5901
+EXPOSE 5500 5901
 CMD service uvncrepeater start
