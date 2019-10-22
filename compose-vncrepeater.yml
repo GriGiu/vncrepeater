@@ -1,0 +1,14 @@
+###    Docker Compose for run UltraVNC repeater container
+
+uncrepeater:
+  image: grigiu/vncrepeater:latest
+  privileged: true
+
+  restart: always
+
+  ports:
+  - "5500:5500"
+  - "5901:5901"
+
+  environment:
+    - TERM=xterm                                
