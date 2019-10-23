@@ -9,6 +9,8 @@ uncrepeater:
   ports:
   - "5500:5500"
   - "5901:5901"
+  
+  tty: true
 
   environment:
     - TERM=xterm                                
