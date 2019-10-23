@@ -4,7 +4,7 @@ uncrepeater:
   image: grigiu/vncrepeater:latest
   privileged: true
 
-  restart: always
+  restart: unless-stopped
 
   ports:
   - "5500:5500"
