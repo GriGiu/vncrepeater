@@ -10,6 +10,10 @@ For use compose see compose file and exec :
 
 docker-compose -f compose-vncrepeater.yml up -d
 
+Edit configuration to suit your needs : /etc/uvnc/uvncrepeater.ini
+
+Start/Stop service : service uvncrepeater start/stop
+
 
 
 
